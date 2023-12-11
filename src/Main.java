@@ -35,7 +35,7 @@ public class Main {
             if(userInput.equals("1")){
                 System.out.println("Engelska");
             } else if (userInput.equals("2")) {
-                System.out.println("Visa betyf");
+                System.out.println("Visa betyg");
             } else if (userInput.equals("3")) {
                 printFirstMenu();
             } else {
@@ -48,9 +48,7 @@ public class Main {
 
     private static void printAdminMenu(){
         // Switch
-        Scanner scanner = new Scanner(System.in);
-        int val = Integer.parseInt(scanner.nextLine());
-
+        String userInput = sc.nextLine();
         do {
             System.out.println("1: Lägg till glosor"); // case1
             System.out.println("2: Ta bort glosor"); // case2
@@ -59,21 +57,21 @@ public class Main {
             System.out.println("5: Uppdatera studentinfo"); // case5
             System.out.println("6: Gå tillbaka"); // case6
 
-            switch (val) {
-                case 1 -> {
+            switch (userInput) {
+                case "1" -> {
                 }
-                case 2 -> {
+                case "2" -> {
                 }
-                case 3 -> {
+                case "3" -> {
                 }
-                case 4 -> {
+                case "4" -> {
                 }
-                case 5 -> {
+                case "5" -> {
                 }
-                case 6 -> {
+                case "6" -> {
                 }
             }
-        } while (val != 6);
+        } while (!userInput.equals(6));
     }
 
     private static void printGradesMenu(){
