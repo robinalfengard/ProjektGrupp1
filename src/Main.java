@@ -5,5 +5,6 @@ public class Main {
         // test/yrla
         // test/Ludwig1
         // test Thai
+        // test Trung
     }
 }
